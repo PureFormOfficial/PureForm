@@ -3,26 +3,160 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>PureForm</title>
-<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f6f2ea;
+color:#222;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:white;
+}
+
+nav img{
+height:50px;
+}
+
+.links{
+display:flex;
+gap:30px;
+}
+
+.links a{
+text-decoration:none;
+color:#222;
+font-weight:600;
+}
+
+.cart{
+background:#222;
+color:white;
+padding:10px 20px;
+border-radius:999px;
+}
+
+.hero{
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+padding:50px 8%;
+gap:50px;
+}
+
+.hero-text h1{
+font-size:80px;
+line-height:.95;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:20px;
+color:#666;
+margin-bottom:30px;
+}
+
+.hero-text button{
+background:#222;
+color:white;
+border:none;
+padding:18px 35px;
+border-radius:999px;
+font-size:18px;
+cursor:pointer;
+}
+
+.hero-image img{
+width:100%;
+border-radius:30px;
+}
+
+.products{
+padding:50px 8%;
+}
+
+.products h2{
+font-size:42px;
+margin-bottom:25px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:25px;
+}
+
+.card img{
+width:100%;
+border-radius:15px;
+margin-bottom:15px;
+}
+
+.price{
+font-weight:700;
+margin-top:10px;
+}
+
+@media(max-width:900px){
+
+.hero{
+grid-template-columns:1fr;
+}
+
+.hero-text h1{
+font-size:55px;
+}
+
+.links{
+display:none;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
 <nav>
-<div class="logo">
-<img src="Screenshot 2026-11-22 224757.png" alt="PureForm Logo">
-</div>
 
-<div class="nav-links">
+<img src="Screenshot 2026-11-22 224757.png">
+
+<div class="links">
 <a href="#">Home</a>
-<a href="#shop">Shop</a>
-<a href="#about">About</a>
+<a href="#">Shop</a>
+<a href="#">About</a>
 </div>
 
 <div class="cart">
 🛒 0
 </div>
+
 </nav>
 
 <section class="hero">
@@ -30,13 +164,16 @@
 <div class="hero-text">
 
 <h1>
-Move Better.<br>
-Look Better.<br>
+Move Better.
+<br>
+Look Better.
+<br>
 Perform Better.
 </h1>
 
 <p>
-Premium athletic wear built for athletes, students, and everyday movement.
+Premium athletic wear engineered for comfort,
+performance and everyday movement.
 </p>
 
 <button>
@@ -47,57 +184,37 @@ Shop Collection
 
 <div class="hero-image">
 
-<img src="pureform-logo.png">
+<img src="Screenshot 2026-11-23 172952.png">
 
 </div>
 
 </section>
 
-<section id="shop" class="products">
+<section class="products">
 
-<h2>Featured Products</h2>
+<h2>Featured Collection</h2>
 
 <div class="product-grid">
 
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800">
-<h3>Performance Tee</h3>
-<p>$34.99</p>
-<button>Add To Cart</button>
+<div class="card">
+<img src="Screenshot 2026-11-23 172952.png">
+<h3>PureForm Tee</h3>
+<div class="price">$34.99</div>
 </div>
 
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800">
-<h3>Premium Hoodie</h3>
-<p>$59.99</p>
-<button>Add To Cart</button>
+<div class="card">
+<img src="Screenshot 2026-11-23 172952.png">
+<h3>Essential Tee</h3>
+<div class="price">$34.99</div>
 </div>
 
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1506629905607-343cb1d8f6c8?w=800">
-<h3>Athletic Joggers</h3>
-<p>$44.99</p>
-<button>Add To Cart</button>
-</div>
-
-<div class="product-card">
-<img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=800">
-<h3>Classic Sweater</h3>
-<p>$49.99</p>
-<button>Add To Cart</button>
+<div class="card">
+<img src="Screenshot 2026-11-23 172952.png">
+<h3>Premium Tee</h3>
+<div class="price">$39.99</div>
 </div>
 
 </div>
-
-</section>
-
-<section id="about" class="about">
-
-<h2>About PureForm</h2>
-
-<p>
-Clean athletic wear engineered for comfort, style and performance.
-</p>
 
 </section>
 
