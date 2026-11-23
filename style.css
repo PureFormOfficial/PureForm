@@ -8,6 +8,52 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#f5f7fa;
-color:#1d1d1f;
+background:#f6f8fc;
+color:#222;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:white;
+box-shadow:0 2px 15px rgba(0,0,0,.06);
+}
+
+.logo{
+font-size:32px;
+font-weight:800;
+color:#4f8cff;
+}
+
+.hero{
+padding:80px 8%;
+text-align:center;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+color:#666;
+margin-bottom:25px;
+}
+
+button{
+background:#4f8cff;
+color:white;
+border:none;
+padding:15px 30px;
+border-radius:999px;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+}
+
+button:hover{
+opacity:.9;
 }
