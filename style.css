@@ -8,8 +8,8 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#f4f7fc;
-color:#222;
+background:#f7f9fc;
+color:#1e1e1e;
 }
 
 nav{
@@ -18,13 +18,16 @@ justify-content:space-between;
 align-items:center;
 padding:20px 8%;
 background:white;
-box-shadow:0 4px 20px rgba(0,0,0,.08);
+box-shadow:0 4px 20px rgba(0,0,0,.06);
+position:sticky;
+top:0;
+z-index:999;
 }
 
 .logo{
 font-size:32px;
 font-weight:800;
-color:#4585ff;
+color:#4f8cff;
 }
 
 .nav-links{
@@ -38,75 +41,107 @@ color:#222;
 font-weight:600;
 }
 
+.cart{
+background:#4f8cff;
+color:white;
+padding:10px 20px;
+border-radius:999px;
+font-weight:600;
+}
+
 .hero{
-padding:80px 8%;
 display:grid;
 grid-template-columns:1fr 1fr;
+padding:60px 8%;
 align-items:center;
 gap:50px;
 }
 
 .hero h1{
-font-size:75px;
-line-height:.95;
+font-size:70px;
+line-height:1;
 margin-bottom:20px;
 }
 
 .hero p{
-font-size:20px;
+font-size:21px;
 color:#666;
-margin-bottom:30px;
+margin-bottom:25px;
 }
 
 .hero button{
-background:#4585ff;
-color:white;
+padding:16px 30px;
 border:none;
-padding:18px 32px;
+background:#4f8cff;
+color:white;
 border-radius:999px;
 font-size:18px;
-font-weight:600;
 cursor:pointer;
 }
 
 .hero img{
 width:100%;
-border-radius:35px;
-box-shadow:0 10px 40px rgba(0,0,0,.1);
+border-radius:30px;
+box-shadow:0 12px 40px rgba(0,0,0,.12);
 }
 
 .products{
-padding:50px 8%;
+padding:60px 8%;
 }
 
 .products h2{
-font-size:40px;
-margin-bottom:25px;
+font-size:42px;
+margin-bottom:30px;
 }
 
 .product-grid{
 display:grid;
-grid-template-columns:repeat(4,1fr);
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 }
 
-.product{
+.product-card{
 background:white;
-padding:20px;
 border-radius:25px;
+padding:20px;
 box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
-.product img{
+.product-card img{
 width:100%;
+height:280px;
+object-fit:cover;
 border-radius:15px;
-margin-bottom:15px;
 }
 
-.price{
-margin-top:10px;
+.product-card h3{
+margin-top:15px;
+}
+
+.product-card p{
+margin:10px 0;
+color:#4f8cff;
 font-weight:700;
-color:#4585ff;
+}
+
+.product-card button{
+width:100%;
+padding:12px;
+background:#4f8cff;
+color:white;
+border:none;
+border-radius:999px;
+cursor:pointer;
+}
+
+.about{
+padding:60px 8%;
+text-align:center;
+}
+
+.about h2{
+margin-bottom:20px;
+font-size:40px;
 }
 
 @media(max-width:900px){
@@ -115,11 +150,12 @@ color:#4585ff;
 grid-template-columns:1fr;
 }
 
-.product-grid{
-grid-template-columns:repeat(2,1fr);
+.hero h1{
+font-size:52px;
 }
 
-.hero h1{
-font-size:50px;
+.nav-links{
+display:none;
 }
+
 }
