@@ -24,10 +24,10 @@ top:0;
 z-index:999;
 }
 
-.logo{
-font-size:32px;
-font-weight:800;
-color:#4f8cff;
+.logo img{
+height:90px;
+width:auto;
+display:block;
 }
 
 .nav-links{
