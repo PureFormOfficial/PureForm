@@ -1,8 +1,10 @@
-function addToCart(name,price){
+function addToCart(name, price){
 
 let cart =
 JSON.parse(
-localStorage.getItem("pureformCart")
+localStorage.getItem(
+"pureformCart"
+)
 ) || [];
 
 cart.push({
