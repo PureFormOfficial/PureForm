@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>PureForm</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+font-family:Poppins,sans-serif;
 }
 
 body{
@@ -19,21 +24,37 @@ background:#f7f4ee;
 nav{
 display:flex;
 justify-content:space-between;
-padding:20px 7%;
+align-items:center;
+padding:20px 8%;
 background:white;
 }
 
+.logo img{
+height:45px;
+}
+
+.nav-links{
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:black;
+font-weight:600;
+}
+
 .hero{
-height:80vh;
+height:85vh;
 background:url("Screenshot 2026-11-23 172952.png");
 background-size:cover;
 background-position:center;
 display:flex;
 align-items:center;
-padding:0 7%;
+padding:0 8%;
 }
 
-.hero-content{
+.hero-box{
 background:white;
 padding:40px;
 border-radius:25px;
@@ -41,7 +62,7 @@ max-width:500px;
 }
 
 .hero h1{
-font-size:65px;
+font-size:60px;
 line-height:.9;
 }
 
@@ -49,17 +70,17 @@ line-height:.9;
 margin:20px 0;
 }
 
-.hero button{
+button{
 padding:15px 30px;
 border:none;
+border-radius:50px;
 background:black;
 color:white;
-border-radius:50px;
 cursor:pointer;
 }
 
 .categories{
-padding:80px 7%;
+padding:80px 8%;
 display:grid;
 grid-template-columns:repeat(4,1fr);
 gap:20px;
@@ -67,43 +88,37 @@ gap:20px;
 
 .category{
 background:white;
-padding:80px 20px;
+padding:60px;
 text-align:center;
 border-radius:25px;
 font-weight:700;
 }
 
-footer{
-padding:50px;
-text-align:center;
-}
-
-a{
-text-decoration:none;
-color:black;
-}
 </style>
+
 </head>
 
 <body>
 
 <nav>
 
-<img src="Screenshot 2026-11-22 224757.png" height="45">
+<a href="index.html" class="logo">
+<img src="Screenshot 2026-11-22 224757.png">
+</a>
 
-<div>
-<a href="shop.html">SHOP</a>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="cart.html">Cart</a>
 </div>
 
 </nav>
 
 <section class="hero">
 
-<div class="hero-content">
+<div class="hero-box">
 
-<h1>
-Elevated Essentials
-</h1>
+<h1>Elevated Essentials</h1>
 
 <p>
 Built for movement.
@@ -128,12 +143,6 @@ SHOP NOW
 <div class="category">SWEATERS</div>
 
 </section>
-
-<footer>
-
-© PureForm
-
-</footer>
 
 </body>
 </html>
