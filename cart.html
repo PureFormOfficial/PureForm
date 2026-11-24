@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+<title>Cart</title>
+</head>
+
+<body>
+
+<h1>Your Cart</h1>
+
+<div id="cartItems"></div>
+
+<h2>
+Total:
+$<span id="total">0</span>
+</h2>
+
+<script>
+
+let cart =
+JSON.parse(
+localStorage.getItem("pureformCart")
+) || [];
+
+let html = "";
+let total = 0;
+
+cart.forEach(item=>{
+
+html +=
+"<p>"
++
+item.name
++
+" - $"
++
+item.price
++
+"</p>";
+
+total += item.price;
+
+});
+
+document.getElementById(
+"cartItems"
+).innerHTML = html;
+
+document.getElementById(
+"total"
+).innerText = total.toFixed(2);
+
+</script>
+
+</body>
+</html>
