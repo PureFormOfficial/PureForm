@@ -1,17 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>PureForm</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
 
 <style>
-
 *{
 margin:0;
 padding:0;
@@ -20,171 +13,75 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#f6f2ea;
-color:#222;
+background:#f7f4ee;
 }
 
 nav{
 display:flex;
 justify-content:space-between;
-align-items:center;
-padding:20px 8%;
+padding:20px 7%;
 background:white;
 }
 
-.logo img{
-height:55px;
-}
-
-.links{
-display:flex;
-gap:25px;
-}
-
-.links a{
-text-decoration:none;
-color:#222;
-font-weight:600;
-}
-
-.cart{
-background:#4f86ff;
-color:white;
-padding:10px 20px;
-border-radius:999px;
-font-weight:700;
-}
-
 .hero{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
-padding:50px 8%;
+height:80vh;
+background:url("Screenshot 2026-11-23 172952.png");
+background-size:cover;
+background-position:center;
+display:flex;
 align-items:center;
+padding:0 7%;
+}
+
+.hero-content{
+background:white;
+padding:40px;
+border-radius:25px;
+max-width:500px;
 }
 
 .hero h1{
-font-size:70px;
-line-height:1;
-margin-bottom:20px;
+font-size:65px;
+line-height:.9;
 }
 
 .hero p{
-font-size:20px;
-color:#666;
-margin-bottom:30px;
+margin:20px 0;
 }
 
 .hero button{
+padding:15px 30px;
 border:none;
-padding:18px 35px;
-background:#4f86ff;
+background:black;
 color:white;
-font-size:18px;
-border-radius:999px;
+border-radius:50px;
 cursor:pointer;
-}
-
-.hero-image img{
-width:100%;
-border-radius:30px;
-}
-
-.search-section{
-padding:30px 8%;
-}
-
-.search-section input{
-width:100%;
-padding:18px;
-border-radius:20px;
-border:1px solid #ddd;
-font-size:17px;
 }
 
 .categories{
-padding:0 8% 20px;
-display:flex;
-gap:10px;
-flex-wrap:wrap;
-}
-
-.categories button{
-padding:10px 18px;
-border:none;
-background:white;
-border-radius:999px;
-cursor:pointer;
-}
-
-.products{
-padding:20px 8% 60px;
-}
-
-.products h2{
-font-size:40px;
-margin-bottom:20px;
-}
-
-.product-grid{
+padding:80px 7%;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(4,1fr);
 gap:20px;
 }
 
-.card{
+.category{
 background:white;
+padding:80px 20px;
+text-align:center;
 border-radius:25px;
-padding:20px;
-}
-
-.card img{
-width:100%;
-border-radius:15px;
-margin-bottom:15px;
-}
-
-.card h3{
-margin-bottom:10px;
-}
-
-.price{
 font-weight:700;
-color:#4f86ff;
-margin-bottom:15px;
 }
 
-.card button{
-width:100%;
-padding:12px;
-border:none;
-background:#4f86ff;
-color:white;
-border-radius:999px;
-cursor:pointer;
-}
-
-.about{
-padding:60px 8%;
+footer{
+padding:50px;
 text-align:center;
 }
 
-.about h2{
-margin-bottom:15px;
+a{
+text-decoration:none;
+color:black;
 }
-
-@media(max-width:900px){
-
-.hero{
-grid-template-columns:1fr;
-}
-
-.hero h1{
-font-size:50px;
-}
-
-}
-
 </style>
 </head>
 
@@ -192,187 +89,51 @@ font-size:50px;
 
 <nav>
 
-<div class="logo">
-<img src="Screenshot 2026-11-22 224757.png">
-</div>
+<img src="Screenshot 2026-11-22 224757.png" height="45">
 
-<div class="links">
-<a href="#">Home</a>
-<a href="#shop">Shop</a>
-<a href="#about">About</a>
-</div>
-
-<div class="cart">
-🛒 <span id="cartCount">0</span>
+<div>
+<a href="shop.html">SHOP</a>
 </div>
 
 </nav>
 
 <section class="hero">
 
-<div>
+<div class="hero-content">
 
 <h1>
 Elevated Essentials
-For Everyday
-Movement.
 </h1>
 
 <p>
-Premium athletic wear designed for comfort, performance and timeless style.
+Built for movement.
+Designed for everyday life.
 </p>
 
-<a href="#shop">
+<a href="shop.html">
 <button>
-Shop Collection
+SHOP NOW
 </button>
 </a>
 
 </div>
 
-<div class="hero-image">
-
-<img src="Screenshot 2026-11-23 172952.png">
-
-</div>
-
-</section>
-
-<section class="search-section">
-
-<input id="search"
-type="text"
-placeholder="Search products...">
-
 </section>
 
 <section class="categories">
 
-<button>All</button>
-<button>Shirts</button>
-<button>Hoodies</button>
-<button>Joggers</button>
-<button>Sweaters</button>
+<div class="category">SHIRTS</div>
+<div class="category">HOODIES</div>
+<div class="category">JOGGERS</div>
+<div class="category">SWEATERS</div>
 
 </section>
 
-<section id="shop" class="products">
+<footer>
 
-<h2>Shop Collection</h2>
+© PureForm
 
-<div class="product-grid">
-
-<div class="card">
-<img src="Screenshot 2026-11-23 172952.png">
-<h3>Performance Tee</h3>
-<div class="price">$34.99</div>
-<button onclick="addCart()">Add To Cart</button>
-</div>
-
-<div class="card">
-<img src="Screenshot 2026-11-23 172952.png">
-<h3>Oversized Tee</h3>
-<div class="price">$34.99</div>
-<button onclick="addCart()">Add To Cart</button>
-</div>
-
-<div class="card">
-<img src="Screenshot 2026-11-23 172952.png">
-<h3>Classic Tee</h3>
-<div class="price">$39.99</div>
-<button onclick="addCart()">Add To Cart</button>
-</div>
-
-<div class="card">
-<img src="Screenshot 2026-11-23 172952.png">
-<h3>Core Hoodie</h3>
-<div class="price">$59.99</div>
-<button onclick="addCart()">Add To Cart</button>
-</div>
-
-<div class="card">
-<img src="Screenshot 2026-11-23 172952.png">
-<h3>Freedom Hoodie</h3>
-<div class="price">$59.99</div>
-<button onclick="addCart()">Add To Cart</button>
-</div>
-
-<div class="card">
-<img src="Screenshot 2026-11-23 172952.png">
-<h3>Athletic Hoodie</h3>
-<div class="price">$64.99</div>
-<button onclick="addCart()">Add To Cart</button>
-</div>
-
-<div class="card">
-<img src="Screenshot 2026-11-23 172952.png">
-<h3>Training Joggers</h3>
-<div class="price">$44.99</div>
-<button onclick="addCart()">Add To Cart</button>
-</div>
-
-<div class="card">
-<img src="Screenshot 2026-11-23 172952.png">
-<h3>Essential Joggers</h3>
-<div class="price">$44.99</div>
-<button onclick="addCart()">Add To Cart</button>
-</div>
-
-<div class="card">
-<img src="Screenshot 2026-11-23 172952.png">
-<h3>Flex Joggers</h3>
-<div class="price">$49.99</div>
-<button onclick="addCart()">Add To Cart</button>
-</div>
-
-<div class="card">
-<img src="Screenshot 2026-11-23 172952.png">
-<h3>Cloud Sweater</h3>
-<div class="price">$49.99</div>
-<button onclick="addCart()">Add To Cart</button>
-</div>
-
-<div class="card">
-<img src="Screenshot 2026-11-23 172952.png">
-<h3>Everyday Sweater</h3>
-<div class="price">$54.99</div>
-<button onclick="addCart()">Add To Cart</button>
-</div>
-
-<div class="card">
-<img src="Screenshot 2026-11-23 172952.png">
-<h3>Classic Sweater</h3>
-<div class="price">$54.99</div>
-<button onclick="addCart()">Add To Cart</button>
-</div>
-
-</div>
-
-</section>
-
-<section id="about" class="about">
-
-<h2>About PureForm</h2>
-
-<p>
-PureForm creates elevated everyday apparel focused on comfort, simplicity and performance.
-</p>
-
-</section>
-
-<script>
-
-let cart = 0;
-
-function addCart(){
-
-cart++;
-
-document.getElementById("cartCount").innerText = cart;
-
-}
-
-</script>
+</footer>
 
 </body>
 </html>
